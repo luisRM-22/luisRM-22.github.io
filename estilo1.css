@@ -1,0 +1,120 @@
+#contenedor {
+    width: 90%;
+    margin: auto;
+    background-color: #acacac;
+}
+
+#encabezado {
+    text-align: center;
+    background-color: #EFD80E;
+}
+
+nav {
+    margin-bottom: 20px; /* Espaciado entre menús y contenido */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* Distribuir uniformemente */
+}
+
+nav ul li {
+    margin: 0; /* Sin margen adicional */
+}
+
+ul li a {
+    text-decoration: none;
+    color: white; /* Color del texto */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #646464;
+    padding: 10px 20px; /* Agregar un poco de padding */
+    display: block; /* Hacer el enlace un bloque completo */
+}
+
+nav ul li a:hover {
+    background-color: #8F0884; /* Cambia el color al pasar el mouse */
+    text-decoration: none; /* Elimina el subrayado en hover */
+}
+
+/* Estilo para el menú vertical */
+nav.vertical ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block; /* Cambia a bloque para el menú vertical */
+}
+
+nav.vertical ul li {
+    margin: 10px 0; /* Espaciado vertical entre los elementos */
+}
+
+nav.vertical ul li a {
+    text-decoration: none;
+    color: white; /* Color del texto */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #646464;
+    padding: 10px 15px; /* Padding para el enlace */
+    display: block; /* Hacer el enlace un bloque completo */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+}
+
+nav.vertical ul li a:hover {
+    background-color: #8F0884; /* Cambia el color al pasar el mouse */
+    text-decoration: none; /* Elimina el subrayado en hover */
+}
+
+#derecha {
+    float: right;
+    background-color: #B4B3A8;
+    width: 80%;
+}
+
+#izquierda {
+    background-color: #646464;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+#piepagina {
+    clear: both;
+    background-color: #8F0884;
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+
+    nav.vertical ul {
+        flex-direction: column; /* Mantener el menú vertical como columna */
+        align-items: center; /* Centra el menú vertical */
+    }
+
+    #derecha, #izquierda {
+        width: 100%; /* Cada sección ocupará el 100% en pantallas pequeñas */
+        float: none; /* Elimina el float para el diseño vertical */
+    }
+}
+
+@media (max-width: 480px) {
+    ul li a {
+        font-size: 16px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+}
+
+img {
+    max-width: 100%;  /* La imagen no puede exceder el ancho de su contenedor */
+    height: auto;     /* Mantiene la proporción de la imagen */
+}
+
